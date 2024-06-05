@@ -1,0 +1,16 @@
+profit calculation
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x,a,b;
+    scanf("%d%d%d",&x,&a,&b);
+   int profit=(x*a)-(x*b);
+    int s=profit-100;
+    printf("%d",s);
+               
+    
+    return 0;
+}
