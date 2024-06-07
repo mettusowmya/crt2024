@@ -1,0 +1,19 @@
+Boating 7
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int m,a,c,w;
+    scanf("%d %d %d",&m,&a,&c);
+    w=(a*75)+(c*30);
+    if(w>=m){
+        printf("Boat will drown");
+        }
+    else{
+        printf("Boat is stable");
+       }
+    
+    return 0;
+}
