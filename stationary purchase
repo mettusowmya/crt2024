@@ -1,0 +1,35 @@
+stationary purchase
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int q,p,t;
+        scanf("%d%d",&q,&p);
+    printf("Quantity Ordered %d\n",q);
+    printf("Price per item is Rs.%d\n",p);
+    t=q*p;
+    printf("Total Amount = Rs.%d\n",t);
+    if (q>200){
+        float d=t*0.20;
+        printf("Discount Earned = Rs.%.1f\n",d);
+        float ad = t-d;
+        printf("Amount after Discount - Rs.%.1f\n",ad);
+        float gst = ad*0.18;
+        printf("GST - Rs.%.1f\n",gst);
+        float na = ad+gst;
+        printf("Net Amount Payable is Rs.%.1f",na);
+        
+    }
+    else{
+        float gst = t*0.18;
+        printf("GST - Rs.%.1f\n",gst);
+         float na=t+gst;
+        printf("Net Amount Payable is Rs.%.1f",na);
+        
+    }
+    
+    
+    return 0;
+}
