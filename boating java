@@ -1,0 +1,21 @@
+boating java
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int w=sc.nextInt();
+        int a=sc.nextInt();
+        int c=sc.nextInt();
+       int n=(a*75)+(c*30);
+        if(w<=n){
+            System.out.println("Boat will drown");
+        }
+        else{
+            System.out.println("Boat is stable");
+        }
+    }
+        
+}
