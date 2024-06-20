@@ -1,0 +1,27 @@
+ascii values java
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char n=sc.next().charAt(0);
+        if(n>=65 && n<=90){
+            System.out.println("Upper");
+        }
+        else if(n>=97 && n<=122){
+            System.out.println("Lower");
+        }
+        else if(n>=48 && n<=57){
+            System.out.println("Number");
+        }
+        else{
+            System.out.println("Symbol");
+        }
+            
+        }
+        
+       
+        
+}
